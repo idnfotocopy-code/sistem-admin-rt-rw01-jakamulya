@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sistem-admin-rt-rw01-jakamulya
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /login
+    envVars:
+      - key: NODE_ENV
+        value: production
